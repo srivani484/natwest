@@ -1,0 +1,192 @@
+
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Sep 14 2021 14:53:12 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "pageOfferingTag": [
+      "dxc:offerings/analytics"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Discover",
+    "cq:lastReplicatedBy_publish": "sambasivara@adobe.com",
+    "enableInvoca": "false",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "35a3261a-dfc7-4bef-9d74-31eb50a0ceb3",
+    "pwaOrientation": "any",
+    "cq:template": "/conf/ds-ecom-webapp-dt/settings/wcm/templates/root-page",
+    "cq:lastReplicatedBy": "sambasivara@adobe.com",
+    "cq:lastReplicationAction_publish": "Activate",
+    "jcr:predecessors": [
+      "9b899ed7-0aac-485d-8e05-e202a409a685"
+    ],
+    "jcr:created": "Tue Sep 14 2021 14:53:12 GMT+0530",
+    "pwaDisplay": "standalone",
+    "cq:lastReplicated": "Wed Aug 04 2021 09:29:10 GMT+0000",
+    "cq:lastModified": "Sat Sep 25 2021 17:14:15 GMT+0530",
+    "id": "article-detail",
+    "pageServiceTag": [
+      "dxc:services/applications"
+    ],
+    "jcr:description": "desc",
+    "pwaCachestrategy": "staleWhileRevalidate",
+    "jcr:baseVersion": "9b899ed7-0aac-485d-8e05-e202a409a685",
+    "jcr:isCheckedOut": true,
+    "excludeSearchIndex": "false",
+    "jcr:uuid": "ae980dcc-2915-4900-9d45-a61df3a225ec",
+    "sling:resourceType": "ds-ecom-webapp-dt/components/page",
+    "cq:lastReplicated_publish": "Wed Aug 04 2021 09:29:10 GMT+0000",
+    "pageContentTypeTag": "dxc:content-type/about-us",
+    "cq:lastModifiedBy": "admin",
+    "pageLegallyRequired": "false",
+    "showDmVideo": "false",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "ds-ecom-webapp-dt/components/container",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "ds-ecom-webapp-dt/components/container",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "layout": "responsiveGrid",
+          "sling:resourceType": "ds-ecom-webapp-dt/components/container",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "sambasivara@adobe.com",
+            "jcr:lastModifiedBy": "sambasivara@adobe.com",
+            "jcr:created": "Wed Aug 04 2021 09:20:40 GMT+0000",
+            "text": "<p>Your home for world leading dental brands, a comprehensive education platform for the whole practice team and innovative end to end solutions to help your business grow and deliver excellent patient care.</p>\r\n",
+            "jcr:lastModified": "Wed Aug 04 2021 09:20:47 GMT+0000",
+            "sling:resourceType": "ds-ecom-webapp/components/text",
+            "textIsRich": "true"
+          },
+          "image": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "sambasivara@adobe.com",
+            "fileReference": "/content/dam/ds-ecom-webapp/Dicover_Banner.png",
+            "jcr:lastModifiedBy": "sambasivara@adobe.com",
+            "jcr:created": "Wed Aug 04 2021 09:18:28 GMT+0000",
+            "displayPopupTitle": "true",
+            "jcr:lastModified": "Wed Aug 04 2021 09:24:38 GMT+0000",
+            "titleValueFromDAM": "true",
+            "sling:resourceType": "ds-ecom-webapp/components/image",
+            "isDecorative": "false",
+            "altValueFromDAM": "true"
+          },
+          "print": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Sep 14 2021 16:44:29 GMT+0530",
+            "jcr:lastModified": "Tue Sep 14 2021 16:44:29 GMT+0530",
+            "sling:resourceType": "ds-ecom-webapp/components/print"
+          },
+          "card_list": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Sep 14 2021 16:51:35 GMT+0530",
+            "jcr:lastModified": "Tue Sep 14 2021 16:51:35 GMT+0530",
+            "sling:resourceType": "ds-ecom-webapp-dt-academy/components/card-list"
+          },
+          "articlesgrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "buttonLabel": "Read More",
+            "jcr:lastModifiedBy": "admin",
+            "procedure": "Procedure",
+            "sortBy": "SortBy",
+            "defaultImage": "/content/dam/master/courses-events/images/course_hero_banner_01.jpg",
+            "jcr:created": "Mon Sep 20 2021 20:43:57 GMT+0530",
+"loadButton":"loadButton",
+"xfPath":"xfPath",
+"bannerPosition":20,
+"categoryTypeDate":"typeDate",
+"linkLabelDate":"link",
+"newsPressPagePath":"newsPressPagePath",
+"enableDateFilter":"false",
+"newTab":"false",
+"title":"title",
+"text":"text",
+"image":"image",
+"maxItems":20,
+"id":"article",
+"buttonText":"button",
+"countryTag":"test",
+"buttonLink":"/content/ds-ecom-webapp-dt/us/en/home",
+"view":"1",
+            "role": "Role",
+            "tags": [
+               "dxc:services"
+            ],
+            "type": "Type",
+            "heading": "Heading",
+            "articleType": [
+              "news-type:interview"
+            ],
+            "jcr:lastModified": "Sat Sep 25 2021 17:14:15 GMT+0530",
+            "sling:resourceType": "ds-ecom-webapp/components/articlesgrid",
+            "courseTagsLabel": "Course Tags",
+            "searchPages": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "pageSearchPath": "/content/dentsply-sirona-dt/master/en/academy"
+              },
+              "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "pageSearchPath": "/content/dentsply-sirona-dt/master/en/test"
+              },
+              "item2": {
+                "jcr:primaryType": "nt:unstructured",
+                "pageSearchPath": "/content/dentsply-sirona-dt/master"
+              },
+              "item3": {
+                "jcr:primaryType": "nt:unstructured",
+                "pageSearchPath": "/content/dam/master/courses-events/webinar/2021"
+              },
+              "item4": {
+                "jcr:primaryType": "nt:unstructured",
+                "pageSearchPath": "/content/dam/ds-ecom-webapp-dt/content-fragment"
+              }
+            },
+			"excludePages": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "excludeSearchPath": "/content/dentsply-sirona-dt/master/en/academy"
+              },
+              "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "excludeSearchPath": "/content/dentsply-sirona-dt/master/en/test"
+			  }
+            },
+            "filterTags": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "filterParentTag": [
+                  "dxc:services"
+                ],
+				"filterType":"parentfilter",
+                "sectionTitle": "Category Type"
+              }
+            },
+            "sorting": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "sortLabel": "Ascending",
+                "sortValue": "asc"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

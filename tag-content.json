@@ -1,0 +1,3616 @@
+// 20211130232328
+// http://localhost:4502/content/cq:tags/dxc.infinity.json
+
+{
+  "jcr:primaryType": "cq:Tag",
+  "jcr:createdBy": "admin",
+  "jcr:title": "DXC",
+  "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+  "jcr:description": "",
+  "sling:resourceType": "cq/tagging/components/tag",
+  "content-type": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Content Type",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "about-us": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "About Us",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "analyst-report": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Analyst Report",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "awards-and-recognition": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Awards and Recognition",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "awards-detail": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Awards Detail",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "blog-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Blog Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "campaign": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Campaign",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "careers-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Careers Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Contact Us",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "customer-stories-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Customer Stories Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "event": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Event",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "events-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Events Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "generic": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Generic",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "homepage": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Homepage",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "industries-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industries Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "insights": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Insights",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "article": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Article",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "blog": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Blog",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "customer-story": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Customer Story",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "experts": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Experts",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "infographic": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Infographic",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "podcast": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Podcast",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "point-of-view": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Point of View",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "qanda": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Q&A",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "report": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Report",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "subject-matter-expert": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Subject Matter Expert",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "survey": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Survey",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "leadership": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Leadership",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "legal": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Legal",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "news": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "News",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "newsroom": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Newsroom",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "offering": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Offering",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "people": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "People",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "partner-detail": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Partner Detail",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "partners-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Partners Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "perspectives-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Perspectives Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "press-release": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Press Release",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "privacy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Privacy",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "search-results": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Search Results",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "services-landing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Services Landing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "services": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Service",
+    "jcr:lastModifiedBy": "abaggarw@adobe.com",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:lastModified": "Mon Apr 19 2021 03:42:14 GMT+0000",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "analytics-and-engineering": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Analytics and Engineering",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "applications": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Applications",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "business-process-outsourcing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Business Process Outsourcing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "it-outsourcing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IT Outsourcing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "modern-workplace": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Modern Workplace",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "offerings": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Offering",
+    "jcr:lastModifiedBy": "abaggarw@adobe.com",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:lastModified": "Mon Apr 19 2021 03:42:28 GMT+0000",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "analytics": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Analytics",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "data-and-analytics": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Data and Analytics",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "applications": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Applications",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "dxc-software": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "DXC Software",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "enterprise-applications-and-saas": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Enterprise Applications and Saas",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "modernized-apps-and-devops": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Modernized Apps and DevOps",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "testing-and-digital-assurance": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Testing and Digital Assurance",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "business-process-outsourcing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Business Process Outsourcing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "insurance": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Insurance",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "cards-payments-and-lending": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Cards, Payments, and Lending",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "contact-center-experience": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Contact Center Experience",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "finance-and-accounting": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Finance and Accounting",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "cloud": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "cloud-platform": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Cloud Platform",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "hybrid-cloud-and-multicloud": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Hybrid Cloud and Multicloud",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "public-cloud": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Public Cloud",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "engineering": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Engineering",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "design-and-engineering": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Design and Engineering",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "it-outsourcing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IT Outsourcing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "business-continuity": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Business Continuity",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "compute-and-data-center": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Compute and Data Center",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "mainframe": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Mainframe",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "network": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Network",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "storage-and-backup": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Storage and Backup",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "modern-workplace": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Modern Workplace",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "digital-support-services": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Digital Support Services",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "intelligent-collaboration": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Intelligent Collaboration",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "modern-device-management": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Modern Device Management",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      },
+      "workplace-asset-management": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Workplace Asset Management",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    },
+    "security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "security": {
+        "jcr:primaryType": "cq:Tag",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Security",
+        "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+        "jcr:description": "",
+        "sling:resourceType": "cq/tagging/components/tag"
+      }
+    }
+  },
+  "delivery-capability": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Delivery Capability",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "ace---data-to-insighs": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ACE - Data to Insighs",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ace---strategy-and-design-thinking": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ACE - Strategy and Design Thinking",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "dxc-application-integration-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "DXC Application Integration Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "dxc-application-management-for-hybid": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "DXC Application Management for Hybid",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "dxc-application-service-automation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "DXC Application Service Automation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "industry": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Industry",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "aerospace-and-defense": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aerospace and Defense",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "automotive": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Automotive",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "banking-and-capital-markets": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Banking and Capital Markets",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "consumer-and-retail": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Consumer and Retail",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "energy-utilities-oil-and-gas": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Energy, Utilities, Oil and Gas",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "healthcare": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Healthcare",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "insurance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Insurance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "life-science": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Life Science",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "manufacturing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Manufacturing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "public-sector": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Public Sector",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "technology,-media,-and-telecommunication": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Technology, Media, and Telecommunication",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "travel-transportation-and-hospitality": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Travel, Transportation and Hospitality",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "region": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Region",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "americas": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Americas",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "asia-pacific": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Asia Pacific",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "uk-ireland-israel-middle-east-and-africa-north-and-central-europe": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "UK, Ireland, Israel, Middle East & Africa, North & Central Europe",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "southern-europe": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Southern Europe",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "partner": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Partner",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "amazon-web-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Amazon Web Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "at-and-t": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "AT&T",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "blue-prism": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Blue Prism",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cisco": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cisco",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "citrix": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Citrix",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "dell-technologies": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Dell Technologies",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "duck-creek-technologies": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Duck Creek Technologies",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "f5-networks": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "F5 Networks",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "google-cloud": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Google Cloud",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hitachi-vantara": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hitachi Vantara",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "HP",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hewlett-packard-enterprise": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hewlett Packard Enterprise",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ibaset": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "iBASEt",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ibm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IBM",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ifs": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IFS",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "lenovo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lenovo",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mcafee": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "McAfee",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "micro-focus": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Micro Focus",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "microsoft": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Microsoft",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "netapp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "NetApp",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "nvidia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "NVIDIA",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "oracle": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Oracle",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ptc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "PTC",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pure-storage": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Pure Storage",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pwc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "PwC",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "red-hat": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Red Hat",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "riverbed": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Riverbed",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sap": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "SAP",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "servicenow": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ServiceNow",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "smartshift": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "smartShift",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "veritas": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Veritas",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vmware": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "VMware",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "customer": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Customer",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "affin-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Affin Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ahold-delhaize": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ahold Delhaize",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ahold-u-s-a": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ahold U.S.A.",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "airbus": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Airbus",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "alfred-k-rcher": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Alfred Kärcher",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "all-nippon-airways": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "All Nippon Airways",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "allianz-australia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Allianz Australia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "allianz-life": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Allianz Life",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "allianz-se": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Allianz SE",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ally-financial": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ally Financial",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "alstom": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Alstom",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "american-airlines-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "American Airlines Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "amp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "AMP",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "anz-bank-new-zealand": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ANZ Bank New Zealand",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "anz-banking-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ANZ Banking Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aon": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aon",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aon-risk-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aon Risk Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aon-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aon UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "arcos-dorados-argentina": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Arcos Dorados Argentina",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "at-and-t": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "AT&T",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "atomic-weapons-establishment": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Atomic Weapons Establishment",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "australian-taxation-office": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Australian Taxation Office",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "avaya": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Avaya",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aviva": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aviva",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aviva-canada": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aviva Canada",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bae-systems": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BAE Systems",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "baker-hughes": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Baker Hughes",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "banco-de-sabadell": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Banco De Sabadell",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bank-of-baroda": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bank of Baroda",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bank-of-canada": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bank of Canada",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bank-of-india": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bank of India",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bank-of-queensland": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bank of Queensland",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "basf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BASF",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bayernwerk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bayernwerk",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bc-ministry-of-citizens-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BC Ministry of Citizens' Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bc-ministry-of-finance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BC Ministry of Finance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "berner-kantonalbank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Berner Kantonalbank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "blue-cross-and-blue-shield-of-arizona": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Blue Cross and Blue Shield of Arizona",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "blue-cross-and-blue-shield-of-massachusetts": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Blue Cross and Blue Shield of Massachusetts",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bluescope-steel": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BlueScope Steel",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bmw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BMW",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "boeing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Boeing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BP",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "brighthouse-financial": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Brighthouse Financial",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bristol-myers-squibb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bristol-Myers Squibb",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bv-financeira": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "BV Financeira",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "caceis": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "CACEIS",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "caixabank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "CaixaBank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "campbell-soup": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Campbell Soup",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "carl-zeiss": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Carl Zeiss",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "carrefour": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Carrefour",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "carrier": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Carrier",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cenovus-energy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cenovus Energy",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "central-bank-of-ireland": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Central Bank of Ireland",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "chevron": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Chevron",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cibc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "CIBC",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "citigroup": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Citigroup",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "claro-americas": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Claro Americas",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "clydesdale-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Clydesdale Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cma-cgm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "CMA CGM",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "commerzbank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Commerzbank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "commonwealth-bank-of-australia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Commonwealth Bank of Australia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "comunidad-de-madrid": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Comunidad de Madrid",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "continental-ag": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Continental AG",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "copa-holdings": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Copa Holdings",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cr-dit-agricole": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Crédit Agricole",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "daimler": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Daimler",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "danish-ministry-of-justice": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Danish Ministry of Justice",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-for-environment-food-and-rural-affairs-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department for Environment, Food & Rural Affairs UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-for-work-and-pensions": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department for Work and Pensions",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-of-agriculture-and-water-resources": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department of Agriculture and Water Resources",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-of-defence---casg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department of Defence - CASG",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-of-defence---ciog": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department of Defence - CIOG",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-of-health-and-ageing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department of Health and Ageing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "department-of-health-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Department of Health UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "detroit-diesel": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Detroit Diesel",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "deutsche-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Deutsche Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "dnb-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "DNB Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "downer-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Downer Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "e-on": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "E.ON",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "edp-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "EDP Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "educational-testing-service": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Educational Testing Service",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ehealth-queensland": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "eHealth Queensland",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "el-centre-de-telecomunicacions-i-tecnologies-de-la-informaci-de-la-generalitat-de-catalunya-ctti": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "El Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya (CTTI)",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "eni-s-p-a": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Eni S.p.A.",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "equitable-holdings": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Equitable Holdings",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ericsson": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ericsson",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "european-central-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "European Central Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "farmers-insurance-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Farmers Insurance Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "fastweb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Fastweb",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "fca-us": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "FCA US",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "fedex": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "FedEx",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "femsa": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "FEMSA",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ferrero": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ferrero",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ferrovial": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ferrovial",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "fonterra": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Fonterra",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ford": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ford",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "fortum-oyj": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Fortum Oyj",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "freddie-mac": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Freddie Mac",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "general-dynamics": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "General Dynamics",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "general-dynamics-biw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "General Dynamics BIW",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "general-dynamics-eb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "General Dynamics EB",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "general-dynamics-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "General Dynamics UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "general-electric": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "General Electric",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "general-motors": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "General Motors",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "global-atlantic": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Global Atlantic",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "global-payments": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Global Payments",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "government-of-flanders": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Government of Flanders",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "groupe-psa": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Groupe PSA",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "grupo-bimbo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Grupo Bimbo",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "guardian-life-insurance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guardian Life Insurance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "halliburton": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Halliburton",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "harman-becker": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Harman Becker",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hewlett-packard-enterprise": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hewlett Packard Enterprise",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "HP",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "huntington-ingalls": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Huntington Ingalls",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "inail": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "INAIL",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "india-post": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "India Post",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ingalls-shipbuilding": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ingalls Shipbuilding",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "insurance-australia-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Insurance Australia Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "intermountain-healthcare": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Intermountain Healthcare",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ivari": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ivari",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "jackson-national-life-insurance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Jackson National Life Insurance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "jimmy-choo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Jimmy Choo",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "jollibee-foods": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Jollibee Foods",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "jr-east-information-systems-company": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "JR East Information Systems Company",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "kaiser-permanente": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kaiser Permanente",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "kautex-textron": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kautex Textron",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "kraft-heinz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kraft Heinz",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "latitude-financial": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Latitude Financial",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "leonardo-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Leonardo Uk",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "liberty-mutual-insurance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Liberty Mutual Insurance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "liberty-seguros": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Liberty Seguros",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "lincoln-national": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lincoln National",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "lloyds-banking-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lloyds Banking Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "london-markets": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "London Markets",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "luxottica-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Luxottica Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "manulife": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Manulife",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "marathon-petroleum": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Marathon Petroleum",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mastercard": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mastercard",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "maybank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "MayBank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "metlife": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Metlife",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "metropolitan-transportation-authority": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Metropolitan Transportation Authority",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "michael-kors": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Michael Kors",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "micro-focus-international": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Micro Focus International",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "microsoft": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Microsoft",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-education-university-and-research-italy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Education, University and Research, Italy",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-finance-slovakia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Finance, Slovakia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-finance-uae": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Finance, UAE",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-home-affairs": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Home Affairs",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-infrastructure-and-transport-italy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Infrastructure and Transport, Italy",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-justice-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Justice, UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ministry-of-social-development": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ministry of Social Development",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mlp-ag": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "MLP AG",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mod-mission-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "MOD Mission Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "molson-coors": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Molson Coors",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mondel-z-international": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mondelēz International",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "murex": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Murex",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "national-australia-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "National Australia Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "national-grid": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "National Grid",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "natwest-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Natwest Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "nestle": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Nestle",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "network-rail": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Network Rail",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "nissan-north-america": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Nissan North America",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "nn-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "NN Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "novartis": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Novartis",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "oil-search": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Oil Search",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "olympus": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Olympus",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "origin-enegy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Origin Enegy",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "perspecta": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Perspecta",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pfizer": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Pfizer",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "philips": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Philips",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pnc-financial-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "PNC Financial Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "post-office-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Post Office, UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pratt-and-whitney-canada": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Pratt & Whitney Canada",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "procter-and-gamble": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Procter & Gamble",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "progressive": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Progressive",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "prudential-financial": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Prudential Financial",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "prudential-plc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Prudential Plc",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "prudential-singapore": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Prudential Singapore",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "qvalent": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Qvalent",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "raytheon": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Raytheon",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "renault": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Renault",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "reynolds-american": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Reynolds American",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "rio-tinto": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Rio Tinto",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "rolls-royce": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Rolls-Royce",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "royal-dutch-shell": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Royal Dutch Shell",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sabre": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sabre",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "saipem": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saipem",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sap": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "SAP",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "saudi-arabian-monetary-authroity": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saudi Arabian Monetary Authroity",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "services-australia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Services Australia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sime-darby-berhad": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sime Darby Berhad",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "skatteministeriet": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Skatteministeriet",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "skf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "SKF",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sky-italia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sky Italia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sprint": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sprint",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "st-james-place-plc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "St. James Place Plc",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "state-farm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "State Farm",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sumitomo-mitsui-banking-corporation-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sumitomo Mitsui Banking Corporation Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "swedavia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Swedavia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "swiss-federal-railways---sbb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Swiss Federal Railways - SBB",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "swiss-re-ag": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Swiss Re AG",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "swiss-reinsurance-america": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Swiss Reinsurance America",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sydney-trains": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sydney Trains",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "syngenta-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Syngenta Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tabcorp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tabcorp",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "td-bank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "TD Bank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "telenor": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Telenor",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tesoro": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tesoro",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tetra-pak": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tetra Pak",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "textron": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Textron",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "the-capital-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "The Capital Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "the-home-office-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "The Home Office UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "thomson-reuters": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Thomson Reuters",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "thyssenkrupp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "ThyssenKrupp",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tk-elevator": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "TK Elevator",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tnt-express": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "TNT Express",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tops-markets": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tops Markets",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "toyota-motor-sales": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Toyota Motor Sales",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "trane-technologies": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Trane Technologies",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "transbank": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Transbank",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "transport-for-nsw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Transport for NSW",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ubs": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "UBS",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "uniper": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Uniper",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "united-airlines": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "United Airlines",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "united-technologies-corporation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "United Technologies Corporation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "upc-insurance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "UPC Insurance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "urenco": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Urenco",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "urenco-nederland": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Urenco Nederland",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "uwv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "UWV",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vaillant-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vaillant Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vale": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vale",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vattenfall": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vattenfall",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vfs-global": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "VFS GLOBAL",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vicroads": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "VicRoads",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vodafone-germany": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vodafone Germany",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vodafone-group-plc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vodafone Group Plc",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vodafone-uk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vodafone UK",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "volkswagen-slovakia": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Volkswagen Slovakia",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "wells-fargo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Wells Fargo",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "western-union": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Western Union",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "westpac": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Westpac",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "wilton-re": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Wilton Re",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "xpo-logistics": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "XPO Logistics",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "zurich-insurance-group": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Zurich Insurance Group",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "industry-term": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Industry Term",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "accounting": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Accounting",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "agile-process-automation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Agile process automation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "application-management": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Application management",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "application-security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Application security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "application-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Application services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "application-service-automation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Application service automation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "applications-development": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Applications development",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "applications-outsourcing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Applications outsourcing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "applications-testing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Applications testing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "artificial-intelligence": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Artificial intelligence",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "augmented-analytics": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Augmented analytics",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "augmented-reality": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Augmented reality",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "automated-application-managment": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Automated application managment",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "automation-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Automation services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aws-managed-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "AWS managed services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aws-migration-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "AWS migration services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "backup-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Backup Services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "business-continuity": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Business continuity",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "business-process-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Business process services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "card-and-payment-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Card and payment services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "card-processing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Card processing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-advisory": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud advisory",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-applications": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud applications",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-computing-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud computing services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-desktop": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud desktop",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-governance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud governance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-managed-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud managed services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-migration-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud migration services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-platform": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud platform",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloud-security-solutions": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cloud security solutions",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cloudops": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "CloudOps",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "collaboration-solutions": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Collaboration solutions",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "contact-center-experience": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Contact center experience",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "customer-experience-transformation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Customer experience transformation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cyber-defense": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cyber defense",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cyber-security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cyber security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "data-analytics": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Data analytics",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "data-center-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Data center services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "data-driven-decision-making": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Data driven decision making",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "data-protection-may-be-changed-to-risk-management": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Data protection (may be changed to Risk Management)",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "data-science": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Data science",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "data-driven": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Data-driven",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "design-for-operations": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Design for operations",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "design-thinking": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Design thinking",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "devops": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "DevOps",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "devsecops": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "DevSecOps",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-agent-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital agent services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-asset-management": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital asset management",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-assurance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital assurance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-customer-experience-consulting": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital customer experience consulting",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-engineering": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital engineering",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-identity": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital identity",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-strategy-consulting": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "digital strategy consulting",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-support-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Digital support services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "digital-workplace": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "digital workplace",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "emerging-technologies": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Emerging technologies",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "employee-engagement": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Employee engagement",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "employee-experience": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Employee experience",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "employee-productivity": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Employee productivity",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "enterprise-applications": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Enterprise applications",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "finance": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Finance",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "human-centered-design": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Human-centered design",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hybrid-cloud": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hybrid cloud",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "infrastructure-as-a-service": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Infrastructure as a service",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "infrastructure-automation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Infrastructure automation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "infrastructure-security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Infrastructure security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "intelligent-automation": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Intelligent automation",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "intelligent-collaboration": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Intelligent collaboration",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "it-infrastructure-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IT infrastructure services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "it-modernization": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IT modernization",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "it-security": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "IT security",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "lending": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lending",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "machine-learning": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Machine learning",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mainframe": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mainframe",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "managed-cloud-service-provider": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Managed cloud service provider",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mobile-workplace": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mobile workplace",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "modern-applications": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Modern applications",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "modern-device-management": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Modern device management",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "multicloud-management": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Multicloud management",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "network-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Network services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "optimization-techniques": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Optimization techniques",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "order-to-cash-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Order to cash services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "payment-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Payment services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "platform-as-a-service": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Platform as a service",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "public-cloud": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Public cloud",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "record-to-report-services": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Record to report services",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "remote-workforce": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Remote workforce",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "saas-migration": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saas migration",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sap-on-azure": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "SAP on Azure",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "security-operations-center": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Security operations center",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "service-desk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Service desk",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "software-as-a-service": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Software as a Service",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "software-engineering": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "software engineering",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "software-testing": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Software testing",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "storage-solution": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Storage Solution",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "technology-consulting": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Technology consulting",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "threat-intelligence": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Threat intelligence",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "user-experience": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "User experience",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "virtual-desktop": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Virtual desktop",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "virtual-reality": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Virtual reality",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "workplace-asset-management": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Workplace asset management",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "workplace-mobility": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Workplace mobility",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "persona": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Persona",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "3rd-party-advisor": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "3rd Party Advisor",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "analysts": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Analysts",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cxo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "CXO",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "customer": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Customer",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "investor": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Investor",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "job-seeker": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Job seeker",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "decision-maker": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Decision Maker",
+    "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "business-decision-maker": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Business decision maker",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "technical-decision-maker": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Technical decision maker",
+      "jcr:created": "Wed Nov 24 2021 13:50:24 GMT+0530",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  }
+}
