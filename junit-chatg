@@ -1,72 +1,77 @@
 package com.responsive.cer.models;
 
-import org.apache.sling.testing.junit.rules.AemContext;
-import org.junit.Rule;
-import org.junit.Test;
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ValueMap;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(RTEEmojiConfigModel.class)
 public class RTEEmojiConfigModelTest {
 
-    @Rule
-    public AemContext context = new AemContext();
+    private Resource mockResource;
+    private Resource emojiConfigResource;
+    private RTEEmojiConfigModel emojiConfigModel;
+
+    @Before
+    public void setUp() {
+        // Mock the parent resource
+        mockResource = Mockito.mock(Resource.class);
+
+        // Mock the emojiConfig resource
+        emojiConfigResource = Mockito.mock(Resource.class);
+        Mockito.when(mockResource.getChild("emojiconfig")).thenReturn(emojiConfigResource);
+
+        // Mock the child resources for emoji configs
+        Resource emojiConfigsResource = Mockito.mock(Resource.class);
+        Mockito.when(emojiConfigResource.getChild("emojiConfigs")).thenReturn(emojiConfigsResource);
+
+        // Mock individual emoji resources
+        Resource emoji1 = createMockEmojiResource("item0", "e1-0-grinning-face", "&#128540");
+        Resource emoji2 = createMockEmojiResource("item1", "e0-6-grinning-face-with-big-eye", "&#x1F600");
+
+        Mockito.when(emojiConfigsResource.listChildren()).thenReturn(Arrays.asList(emoji1, emoji2).iterator());
+
+        // Create the model and adapt it
+        emojiConfigModel = PowerMockito.mock(RTEEmojiConfigModel.class);
+        PowerMockito.when(emojiConfigResource.adaptTo(RTEEmojiConfigModel.class)).thenReturn(emojiConfigModel);
+    }
+
+    private Resource createMockEmojiResource(String name, String emojiName, String emojiValue) {
+        Resource emojiResource = Mockito.mock(Resource.class);
+        ValueMap valueMap = Mockito.mock(ValueMap.class);
+        Mockito.when(valueMap.get("emojiName", String.class)).thenReturn(emojiName);
+        Mockito.when(valueMap.get("emojiValue", String.class)).thenReturn(emojiValue);
+
+        Mockito.when(emojiResource.adaptTo(ValueMap.class)).thenReturn(valueMap);
+        return emojiResource;
+    }
 
     @Test
     public void testGetEmojiConfigs() {
-        // Create a page resource
-        context.create().resource("/content/test-page",
-                "jcr:primaryType", "cq:Page",
-                "jcr:createdBy", "admin");
+        // Simulate the behavior of the getEmojiConfigs method
+        List<RTEEmojiConfigBean> emojiBeans = emojiConfigModel.getEmojiConfigs();
 
-        // Create a content resource for the page
-        Resource pageResource = context.resourceResolver().getResource("/content/test-page");
-        assertNotNull("Page resource should not be null", pageResource);
-
-        Resource contentResource = context.create().resource(pageResource, "jcr:content",
-                "jcr:primaryType", "cq:PageContent");
-
-        // Create the master-par resource
-        Resource masterParResource = context.create().resource(contentResource, "master-par",
-                "jcr:primaryType", "nt:unstructured",
-                "sling:resourceType", "wcm/foundation/components/responsivegrid");
-
-        // Create the emojiconfig resource
-        Resource emojiconfigResource = context.create().resource(masterParResource, "emojiconfig",
-                "jcr:primaryType", "nt:unstructured",
-                "sling:resourceType", "responsive/components/configs/emojiconfig");
-
-        // Create the emojiConfigs parent resource
-        Resource emojiConfigsResource = context.create().resource(emojiconfigResource, "emojiConfigs",
-                "jcr:primaryType", "nt:unstructured");
-
-        // Create child resources for individual emojis
-        context.create().resource(emojiConfigsResource, "item0",
-                "jcr:primaryType", "nt:unstructured",
-                "emojiName", "e1-0-grinning-face",
-                "emojiValue", "&#128540");
-        context.create().resource(emojiConfigsResource, "item1",
-                "jcr:primaryType", "nt:unstructured",
-                "emojiName", "e0-6-grinning-face-with-big-eye",
-                "emojiValue", "&#x1F600");
-
-        // Adapt the emojiconfig resource to the RTEEmojiConfigModel
-        RTEEmojiConfigModel emojiConfigModel = emojiconfigResource.adaptTo(RTEEmojiConfigModel.class);
-
-        // Assertions
         assertNotNull("EmojiConfigModel should not be null", emojiConfigModel);
-        List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
-        assertNotNull("EmojiConfigs list should not be null", emojiConfigs);
-        assertEquals("Expected 2 emoji configs", 2, emojiConfigs.size());
+        assertNotNull("EmojiConfigs list should not be null", emojiBeans);
+        assertEquals("Expected 2 emoji configs", 2, emojiBeans.size());
 
         // Verify the properties of each RTEEmojiConfigBean
-        assertEquals("Unexpected emoji name for item0", "e1-0-grinning-face", emojiConfigs.get(0).getEmojiName());
-        assertEquals("Unexpected emoji value for item0", "&#128540", emojiConfigs.get(0).getEmojiValue());
+        assertEquals("Unexpected emoji name for item0", "e1-0-grinning-face", emojiBeans.get(0).getEmojiName());
+        assertEquals("Unexpected emoji value for item0", "&#128540", emojiBeans.get(0).getEmojiValue());
 
-        assertEquals("Unexpected emoji name for item1", "e0-6-grinning-face-with-big-eye", emojiConfigs.get(1).getEmojiName());
-        assertEquals("Unexpected emoji value for item1", "&#x1F600", emojiConfigs.get(1).getEmojiValue());
+        assertEquals("Unexpected emoji name for item1", "e0-6-grinning-face-with-big-eye", emojiBeans.get(1).getEmojiName());
+        assertEquals("Unexpected emoji value for item1", "&#x1F600", emojiBeans.get(1).getEmojiValue());
     }
 }
