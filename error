@@ -1,7 +1,9 @@
-java.lang.IllegalArgumentException: args must be an even number of name/values:[jcr:primaryType, cq:Page, jcr:createdBy, admin, jcr:content, jcr:primaryType, cq:PageContent]
-	at org.apache.sling.testing.mock.osgi.MapUtil.toMap(MapUtil.java:109)
-	at org.apache.sling.testing.mock.sling.builder.ContentBuilder.resource(ContentBuilder.java:91)
-	at com.responsive.cer.models.RTEEmojiConfigModelTest.testGetNoofconfigs(RTEEmojiConfigModelTest.java:70)
+java.lang.AssertionError: Expected 2 emoji configs expected:<2> but was:<0>
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.failNotEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:126)
+	at org.junit.Assert.assertEquals(Assert.java:470)
+	at com.responsive.cer.models.RTEEmojiConfigModelTest.testGetEmojiConfigs(RTEEmojiConfigModelTest.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
