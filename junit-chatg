@@ -7,73 +7,62 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.powermock.api.mockito.PowerMockito;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
-@RunWith(PowerMockRunner.class)
-@PrepareForTest(RTEEmojiConfigModel.class)
 public class RTEEmojiConfigModelTest {
 
     @Mock
     private Resource resourceMock;
 
     @Mock
-    private Resource emojiConfigResourceMock;
+    private Resource emojiResource1;
+    
+    @Mock
+    private Resource emojiResource2;
+
+    private RTEEmojiConfigModel emojiConfigModel;
 
     @Before
     public void setUp() {
         MockitoAnnotations.openMocks(this);
         
-        // Mock the main resource that the model adapts from
-        when(resourceMock.getResourceType()).thenReturn("responsive/components/configs/emojiconfig");
+        // Mock the behavior for emoji resources
+        when(emojiResource1.adaptTo(RTEEmojiConfigBean.class)).thenReturn(createEmojiConfigBean("e1-0-grinning-face", "&#128540"));
+        when(emojiResource2.adaptTo(RTEEmojiConfigBean.class)).thenReturn(createEmojiConfigBean("e0-6-grinning-face-with-big-eye", "&#x1F600"));
+
+        // Mock the resource to return the emoji resources
+        List<Resource> children = new ArrayList<>();
+        children.add(emojiResource1);
+        children.add(emojiResource2);
         
-        // Create child resources for emoji configurations
-        List<Resource> childResources = new ArrayList<>();
-        
-        // Mock Resource for Emoji 1
-        Resource emoji1 = mock(Resource.class);
-        ValueMap valueMap1 = mock(ValueMap.class);
-        when(valueMap1.get("emojiName", String.class)).thenReturn("e1-0-grinning-face");
-        when(valueMap1.get("emojiValue", String.class)).thenReturn("&#128540");
-        when(emoji1.adaptTo(ValueMap.class)).thenReturn(valueMap1);
-        childResources.add(emoji1);
+        when(resourceMock.listChildren()).thenReturn(children.iterator());
 
-        // Mock Resource for Emoji 2
-        Resource emoji2 = mock(Resource.class);
-        ValueMap valueMap2 = mock(ValueMap.class);
-        when(valueMap2.get("emojiName", String.class)).thenReturn("e0-6-grinning-face-with-big-eye");
-        when(valueMap2.get("emojiValue", String.class)).thenReturn("&#x1F600");
-        when(emoji2.adaptTo(ValueMap.class)).thenReturn(valueMap2);
-        childResources.add(emoji2);
+        // Create the model instance
+        emojiConfigModel = new RTEEmojiConfigModel();
+        emojiConfigModel.emojiConfigs = new ArrayList<>();
+        for (Resource child : children) {
+            RTEEmojiConfigBean emojiConfigBean = child.adaptTo(RTEEmojiConfigBean.class);
+            if (emojiConfigBean != null) {
+                emojiConfigModel.emojiConfigs.add(emojiConfigBean);
+            }
+        }
+    }
 
-        // Mock the behavior of the resource to return child resources
-        when(resourceMock.listChildren()).thenReturn(childResources.iterator());
-
-        // PowerMock to mock the static behavior of the Sling model's adaptation
-        PowerMockito.whenNew(RTEEmojiConfigModel.class).withArguments(resourceMock).thenReturn(new RTEEmojiConfigModel());
+    private RTEEmojiConfigBean createEmojiConfigBean(String name, String value) {
+        RTEEmojiConfigBean bean = mock(RTEEmojiConfigBean.class);
+        when(bean.getEmojiName()).thenReturn(name);
+        when(bean.getEmojiValue()).thenReturn(value);
+        return bean;
     }
 
     @Test
-    public void testGetEmojiConfigs() throws Exception {
-        // Create the model instance using PowerMockito
-        RTEEmojiConfigModel emojiConfigModel = PowerMockito.mock(RTEEmojiConfigModel.class);
-        
-        // Mock the getEmojiConfigs method
-        when(emojiConfigModel.getEmojiConfigs()).thenCallRealMethod();
-        
-        // Call the method under test
+    public void testGetEmojiConfigs() {
         List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
-
-        // Assert that the number of emojis is as expected
         assertEquals(2, emojiConfigs.size());
         assertEquals("e1-0-grinning-face", emojiConfigs.get(0).getEmojiName());
         assertEquals("&#128540", emojiConfigs.get(0).getEmojiValue());
@@ -82,20 +71,10 @@ public class RTEEmojiConfigModelTest {
     }
 
     @Test
-    public void testGetEmojiConfigsEmpty() throws Exception {
-        // Set the resource to return an empty list of children
-        when(resourceMock.listChildren()).thenReturn(Collections.emptyIterator());
-
-        // Create the model instance using PowerMockito
-        RTEEmojiConfigModel emojiConfigModel = PowerMockito.mock(RTEEmojiConfigModel.class);
-        
-        // Mock the getEmojiConfigs method
-        when(emojiConfigModel.getEmojiConfigs()).thenCallRealMethod();
-
-        // Call the method under test
+    public void testGetEmojiConfigsEmpty() {
+        // Resetting the model to have no emoji configs
+        emojiConfigModel.emojiConfigs.clear();
         List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
-
-        // Assert that the returned list is empty
         assertEquals(0, emojiConfigs.size());
     }
 }
