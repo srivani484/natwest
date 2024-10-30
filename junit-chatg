@@ -1,64 +1,325 @@
-package com.responsive.cer.models;
+package com.bt.core.services.bundle.servlet;
 
-import org.apache.sling.testing.junit.rules.AemContext;
+import com.bt.core.services.bundle.utils.ArticleUtils;
+import com.day.cq.tagging.Tag;
+import com.day.cq.wcm.api.Page;
+import io.wcm.testing.mock.aem.junit.AemContext;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.wrappers.ValueMapDecorator;
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.apache.sling.api.resource.Resource;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
+import javax.jcr.Node;
+import javax.jcr.Property;
+import javax.jcr.RepositoryException;
+import javax.jcr.Value;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyString;
 
-public class RTEEmojiConfigModelTest {
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(ArticleUtils.class)
+public class ArticlesServletTest {
 
     @Rule
-    public AemContext context = new AemContext();
+    public final AemContext context = new AemContext();
+
+    @Mock
+    private Resource resource;
+
+    @Mock
+    private SlingHttpServletRequest request;
+
+    @Mock
+    private SlingHttpServletResponse response;
+
+    @Mock
+    private ResourceResolver resourceResolver;
+
+    private ArticlesServlet articlesServlet = new ArticlesServlet();
+
+    private ValueMapDecorator valueMapDecorator = new ValueMapDecorator(new HashMap<>());
+
+
+    @Before
+    public void setUp() throws RepositoryException, IOException {
+        valueMapDecorator.put("serializableProperties", "testSerializableProp");
+        valueMapDecorator.put("rootTemplatesDir", "testRootTemplatesDir");
+        valueMapDecorator.put("rootPath", "testRootPath");
+
+        Mockito.when(resource.getValueMap()).thenReturn(valueMapDecorator);
+        Mockito.when(request.getResource()).thenReturn(resource);
+        Mockito.when(request.getResourceResolver()).thenReturn(resourceResolver);
+
+        Mockito.when(request.getParameter("startIndex")).thenReturn("0");
+        Mockito.when(request.getParameter("count")).thenReturn("1");
+
+        Mockito.when(resourceResolver.getResource(anyString())).thenReturn(resource);
+        Property serializableProperty = Mockito.mock(Property.class);
+        Value serializableValue = Mockito.mock(Value.class);
+        Mockito.when(serializableValue.getString()).thenReturn("testSerializableProp");
+        Value[] values = {serializableValue};
+        Mockito.when(serializableProperty.getValues()).thenReturn(values);
+
+        PrintWriter writer = Mockito.mock(PrintWriter.class);
+        Mockito.when(response.getWriter()).thenReturn(writer);
+    }
 
     @Test
-    public void testGetEmojiConfigs() {
-        // Simulate the JSON structure for the emoji configuration
-        context.create().resource("/content/test-page", "jcr:primaryType", "cq:Page", 
-                                   "jcr:createdBy", "admin",
-                                   "jcr:content", "jcr:primaryType", "cq:PageContent");
+    public void testDoPostShouldReturn200WhenSuccess() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        PowerMockito.mockStatic(ArticleUtils.class);
+        Page page = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        pageProperties.put("testSerializableProp", "testPropValue");
+        Mockito.when(page.getProperties()).thenReturn(pageProperties);
+        Mockito.when(page.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
+        List<Page> pages = new ArrayList<>();
+        pages.add(page);
 
-        Resource pageResource = context.resourceResolver().getResource("/content/test-page/jcr:content/master-par");
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+        articlesServlet.doPost(request, response);
 
-        // Create the emojiconfig resource
-        Resource emojiconfigResource = context.create().resource(pageResource, "emojiconfig",
-                "jcr:primaryType", "nt:unstructured",
-                "sling:resourceType", "responsive/components/configs/emojiconfig",
-                "jcr:createdBy", "admin",
-                "jcr:lastModifiedBy", "admin",
-                "jcr:created", "Thu Oct 17 2024 12:42:12 GMT+0100",
-                "jcr:lastModified", "Thu Oct 17 2024 12:43:59 GMT+0100");
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
+    }
 
-        // Create child resources for emoji configurations
-        context.create().resource(emojiconfigResource, "emojiConfigs",
-                "jcr:primaryType", "nt:unstructured");
-        context.create().resource(emojiconfigResource, "emojiConfigs/item0",
-                "jcr:primaryType", "nt:unstructured",
-                "emojiName", "e1-0-grinning-face",
-                "emojiValue", "&#128540");
-        context.create().resource(emojiconfigResource, "emojiConfigs/item1",
-                "jcr:primaryType", "nt:unstructured",
-                "emojiName", "e0-6-grinning-face-with-big-eye",
-                "emojiValue", "&#x1F600");
+    @Test
+    public void testDoPostShouldWriteToResponseWhenTemplatesFound() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        PowerMockito.mockStatic(ArticleUtils.class);
+        Page pageOne = Mockito.mock(Page.class);
+        Page pageTwo = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        pageProperties.put("testSerializableProp", "testPropValue");
 
-        // Adapt the emojiconfig resource to the RTEEmojiConfigModel
-        RTEEmojiConfigModel emojiConfigModel = emojiconfigResource.adaptTo(RTEEmojiConfigModel.class);
+        Mockito.when(pageOne.getProperties()).thenReturn(pageProperties);
+        Mockito.when(pageTwo.getProperties()).thenReturn(pageProperties);
 
-        // Assertions
-        assertNotNull(emojiConfigModel);
-        List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
-        assertNotNull(emojiConfigs);
-        assertEquals(2, emojiConfigs.size());
+        Mockito.when(pageOne.getContentResource()).thenReturn(resource);
+        Mockito.when(pageTwo.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
 
-        // Verify the properties of each RTEEmojiConfigBean
-        assertEquals("e1-0-grinning-face", emojiConfigs.get(0).getEmojiName());
-        assertEquals("&#128540", emojiConfigs.get(0).getEmojiValue());
+        List<Page> pages = new ArrayList<>();
+        pages.add(pageOne);
+        pages.add(pageTwo);
 
-        assertEquals("e0-6-grinning-face-with-big-eye", emojiConfigs.get(1).getEmojiName());
-        assertEquals("&#x1F600", emojiConfigs.get(1).getEmojiValue());
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+        articlesServlet.doPost(request, response);
+
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
+    }
+
+    @Test
+    public void testDoPostShouldReturn400WhenNoTemplatesInValueMap() throws IOException {
+        valueMapDecorator.put("articleTemplates", null);
+        articlesServlet.doPost(request, response);
+        Mockito.verify(response, Mockito.atLeastOnce()).sendError(HttpServletResponse.SC_BAD_REQUEST);
+    }
+
+    @Test
+    public void testDoGetShouldReturn400WhenNoTemplatesInValueMap() throws IOException {
+        valueMapDecorator.put("articleTemplates", null);
+        articlesServlet.doGet(request, response);
+        Mockito.verify(response, Mockito.atLeastOnce()).sendError(HttpServletResponse.SC_BAD_REQUEST);
+    }
+
+    @Test
+    public void testDoGetShouldReturn404WhenTemplatesWasNotFound() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        PowerMockito.mockStatic(ArticleUtils.class);
+
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(Collections.EMPTY_LIST);
+
+        articlesServlet.doGet(request, response);
+        Mockito.verify(response, Mockito.atLeastOnce()).sendError(HttpServletResponse.SC_NOT_FOUND);
+    }
+
+    @Test
+    public void testWithArchivedTemplateParameterShouldRerutn200() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        Mockito.when(request.getParameter("archivedTag")).thenReturn("testTag");
+        PowerMockito.mockStatic(ArticleUtils.class);
+        Page pageOne = Mockito.mock(Page.class);
+        Page pageTwo = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        pageProperties.put("testSerializableProp", "testPropValue");
+
+        Mockito.when(pageOne.getProperties()).thenReturn(pageProperties);
+        Mockito.when(pageTwo.getProperties()).thenReturn(pageProperties);
+
+        Mockito.when(pageOne.getContentResource()).thenReturn(resource);
+        Mockito.when(pageTwo.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
+
+        List<Page> pages = new ArrayList<>();
+        pages.add(pageOne);
+        pages.add(pageTwo);
+
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+
+        valueMapDecorator.put("articleTemplates", "/test-template");
+
+        Tag tag = Mockito.mock(Tag.class);
+        Tag parentTag = Mockito.mock(Tag.class);
+
+        Mockito.when(parentTag.getTitle()).thenReturn("parentName");
+
+        Mockito.when(tag.getName()).thenReturn("testTagName");
+        Mockito.when(tag.getPath()).thenReturn("testPath/testPath");
+        Mockito.when(tag.getTagID()).thenReturn("testTagID");
+        Mockito.when(tag.getTitle()).thenReturn("testTitle");
+        Mockito.when(tag.getParent()).thenReturn(parentTag);
+        Map<Tag, Integer> tagList = new HashMap<>();
+        tagList.put(tag, 1);
+        PowerMockito.when(ArticleUtils.getTagsFromPages(any())).thenReturn(tagList);
+
+        PowerMockito.when(ArticleUtils.getArchivedDatesFromPagesByArchivedTags(any(), any())).thenReturn(Collections.EMPTY_MAP);
+
+        articlesServlet.doGet(request, response);
+
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
+    }
+
+    @Test
+    public void testDoGetShouldWriteToResponseWhenTemplatesFound() throws IOException {
+        PowerMockito.mockStatic(ArticleUtils.class);
+
+        Page pageOne = Mockito.mock(Page.class);
+        Page pageTwo = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        pageProperties.put("testSerializableProp", "testPropValue");
+
+        Mockito.when(pageOne.getProperties()).thenReturn(pageProperties);
+        Mockito.when(pageTwo.getProperties()).thenReturn(pageProperties);
+
+        Mockito.when(pageOne.getContentResource()).thenReturn(resource);
+        Mockito.when(pageTwo.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
+
+        List<Page> pages = new ArrayList<>();
+        pages.add(pageOne);
+        pages.add(pageTwo);
+
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+
+        valueMapDecorator.put("articleTemplates", "/test-template");
+
+        Tag tag = Mockito.mock(Tag.class);
+        Tag parentTag = Mockito.mock(Tag.class);
+        Mockito.when(parentTag.getTitle()).thenReturn("tagParent");
+        Mockito.when(tag.getName()).thenReturn("testTagName");
+        Mockito.when(tag.getPath()).thenReturn("testPath/testPath");
+        Mockito.when(tag.getTagID()).thenReturn("testTagID");
+        Mockito.when(tag.getTitle()).thenReturn("testTitle");
+        Mockito.when(tag.getParent()).thenReturn(parentTag);
+        Map<Tag, Integer> tagList = new HashMap<>();
+        tagList.put(tag, 1);
+        PowerMockito.when(ArticleUtils.getTagsFromPages(any())).thenReturn(tagList);
+        articlesServlet.doGet(request, response);
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
+    }
+
+    @Test
+    public void testDoPostShouldReturn200WhenSuccessAndPagesPassedFilterByTag() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        PowerMockito.mockStatic(ArticleUtils.class);
+        Page page = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        String[] filteredTag = {"test/tag"};
+        pageProperties.put("testSerializableProp", "testPropValue");
+        Mockito.when(page.getProperties()).thenReturn(pageProperties);
+        Mockito.when(page.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
+        Mockito.when(request.getParameterValues("filterByTag")).thenReturn(filteredTag);
+        List<Page> pages = new ArrayList<>();
+        pages.add(page);
+
+        PowerMockito.when(ArticleUtils.filteredPageByTags(pages, filteredTag)).thenReturn(pages);
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+        articlesServlet.doPost(request, response);
+
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
+    }
+
+    @Test
+    public void testDoPostShouldReturn200WhenSuccessAndPagesPassedFilterByDate() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        PowerMockito.mockStatic(ArticleUtils.class);
+        Page page = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        Mockito.when(request.getParameter("minDate")).thenReturn("test/date/min");
+        Mockito.when(request.getParameter("maxDate")).thenReturn("test/date/max");
+        pageProperties.put("testSerializableProp", "testPropValue");
+        Mockito.when(page.getProperties()).thenReturn(pageProperties);
+        Mockito.when(page.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
+
+        List<Page> pages = new ArrayList<>();
+        pages.add(page);
+
+        PowerMockito.when(ArticleUtils.parseFromStringToDate(anyString(), anyString())).thenReturn(null);
+
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+        PowerMockito.when(ArticleUtils.filteredPageByDate(any(), any(),any())).thenReturn(pages);
+        PowerMockito.when(ArticleUtils.sortPageByDateAndIsFeature(pages)).thenReturn(pages);
+
+        articlesServlet.doPost(request, response);
+
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
+    }
+
+    @Test
+    public void testDoPostShouldReturn200WhenSerializableValuesIsEmpty() throws IOException {
+        valueMapDecorator.put("articleTemplates", "/test-template");
+        valueMapDecorator.put("serializableProperties", null);
+        PowerMockito.mockStatic(ArticleUtils.class);
+        Page page = Mockito.mock(Page.class);
+        Resource resource = Mockito.mock(Resource.class);
+
+        ValueMapDecorator pageProperties = new ValueMapDecorator(new HashMap<>());
+        Mockito.when(request.getParameter("minDate")).thenReturn("test/date/min");
+        Mockito.when(request.getParameter("maxDate")).thenReturn("test/date/max");
+        pageProperties.put("testSerializableProp", "testPropValue");
+        Mockito.when(page.getProperties()).thenReturn(pageProperties);
+        Mockito.when(page.getContentResource()).thenReturn(resource);
+        Mockito.when(resource.adaptTo(Node.class)).thenReturn(null);
+
+        List<Page> pages = new ArrayList<>();
+        pages.add(page);
+
+        PowerMockito.when(ArticleUtils.parseFromStringToDate(anyString(), anyString())).thenReturn(null);
+
+        PowerMockito.when(ArticleUtils.getListPagesFromTemplate(any(), any(), any())).thenReturn(pages);
+        PowerMockito.when(ArticleUtils.filteredPageByDate(any(), any(),any())).thenReturn(pages);
+        PowerMockito.when(ArticleUtils.sortPageByDateAndIsFeature(pages)).thenReturn(pages);
+
+        articlesServlet.doPost(request, response);
+
+        Mockito.verify(response, Mockito.atLeastOnce()).flushBuffer();
     }
 }
