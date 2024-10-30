@@ -1,11 +1,14 @@
 package com.responsive.cer.models;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.modules.junit4.PowerMockRunner;
 
@@ -15,47 +18,56 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.when;
 
 @RunWith(PowerMockRunner.class)
 public class RTEEmojiConfigModelTest {
 
+    @Mock
     private Resource mockResource;
+
+    @Mock
     private Resource emojiConfigResource;
+
+    @Mock
     private Resource emojiConfigsResource;
+
+    @Mock
+    private ResourceResolver mockResourceResolver;
+
+    @InjectMocks
     private RTEEmojiConfigModel emojiConfigModel;
 
     @Before
     public void setUp() {
-        // Mock the main resource
-        mockResource = Mockito.mock(Resource.class);
-        
-        // Mock the emojiConfig resource
-        emojiConfigResource = Mockito.mock(Resource.class);
-        Mockito.when(mockResource.getChild("emojiconfig")).thenReturn(emojiConfigResource);
-        
-        // Mock the emojiConfigs resource
-        emojiConfigsResource = Mockito.mock(Resource.class);
-        Mockito.when(emojiConfigResource.getChild("emojiConfigs")).thenReturn(emojiConfigsResource);
+        MockitoAnnotations.openMocks(this);
 
-        // Create and mock emoji resources
+        // Mock the resource tree structure
+        when(mockResource.getChild("emojiconfig")).thenReturn(emojiConfigResource);
+        when(emojiConfigResource.getChild("emojiConfigs")).thenReturn(emojiConfigsResource);
+
+        // Mock the emojiConfigs resource children
         List<Resource> emojiResources = new ArrayList<>();
         emojiResources.add(createMockEmojiResource("item0", "e1-0-grinning-face", "&#128540"));
         emojiResources.add(createMockEmojiResource("item1", "e0-6-grinning-face-with-big-eye", "&#x1F600"));
 
         // Set up the emojiConfigsResource to return the emoji resources
-        Mockito.when(emojiConfigsResource.listChildren()).thenAnswer(invocation -> emojiResources.iterator());
+        when(emojiConfigsResource.listChildren()).thenAnswer(invocation -> emojiResources.iterator());
 
-        // Initialize the emojiConfigModel
-        emojiConfigModel = new RTEEmojiConfigModel(mockResource);
+        // Initialize the emojiConfigModel using the resource and resolver
+        emojiConfigModel = PowerMockito.mock(RTEEmojiConfigModel.class);
+        when(emojiConfigModel.getResource()).thenReturn(mockResource);
+        when(emojiConfigModel.getEmojiConfigs()).thenCallRealMethod(); // Use the real method for retrieving emoji configs
     }
 
     private Resource createMockEmojiResource(String name, String emojiName, String emojiValue) {
-        Resource emojiResource = Mockito.mock(Resource.class);
-        ValueMap valueMap = Mockito.mock(ValueMap.class);
-        Mockito.when(valueMap.get("emojiName", String.class)).thenReturn(emojiName);
-        Mockito.when(valueMap.get("emojiValue", String.class)).thenReturn(emojiValue);
+        Resource emojiResource = PowerMockito.mock(Resource.class);
+        ValueMap valueMap = PowerMockito.mock(ValueMap.class);
+        when(valueMap.get("emojiName", String.class)).thenReturn(emojiName);
+        when(valueMap.get("emojiValue", String.class)).thenReturn(emojiValue);
 
-        Mockito.when(emojiResource.adaptTo(ValueMap.class)).thenReturn(valueMap);
+        when(emojiResource.adaptTo(ValueMap.class)).thenReturn(valueMap);
+        when(emojiResource.getName()).thenReturn(name);
         return emojiResource;
     }
 
