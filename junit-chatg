@@ -17,19 +17,27 @@ public class RTEEmojiConfigModelTest {
 
     @Test
     public void testGetEmojiConfigs() {
-        // Create a page resource with primary type and created by properties
+        // Create a page resource
         context.create().resource("/content/test-page", 
                                    "jcr:primaryType", "cq:Page", 
                                    "jcr:createdBy", "admin");
 
+        // Verify that the page resource was created
+        Resource pageResource = context.resourceResolver().getResource("/content/test-page");
+        assertNotNull("Page resource should not be null", pageResource);
+
         // Create a content resource for the page
-        Resource pageResource = context.resourceResolver().getResource("/content/test-page/jcr:content");
-        context.create().resource(pageResource, "master-par", 
-                                   "jcr:primaryType", "nt:unstructured",
-                                   "sling:resourceType", "wcm/foundation/components/responsivegrid");
+        Resource contentResource = context.create().resource(pageResource, "jcr:content", 
+                                                             "jcr:primaryType", "cq:PageContent");
+        assertNotNull("Content resource should not be null", contentResource);
+
+        // Create the master-par resource
+        Resource masterParResource = context.create().resource(contentResource, "master-par", 
+                                                                "jcr:primaryType", "nt:unstructured",
+                                                                "sling:resourceType", "wcm/foundation/components/responsivegrid");
 
         // Create the emojiconfig resource
-        Resource emojiconfigResource = context.create().resource(pageResource, "emojiconfig",
+        Resource emojiconfigResource = context.create().resource(masterParResource, "emojiconfig",
                 "jcr:primaryType", "nt:unstructured",
                 "sling:resourceType", "responsive/components/configs/emojiconfig",
                 "jcr:createdBy", "admin",
@@ -55,16 +63,16 @@ public class RTEEmojiConfigModelTest {
         RTEEmojiConfigModel emojiConfigModel = emojiconfigResource.adaptTo(RTEEmojiConfigModel.class);
 
         // Assertions
-        assertNotNull(emojiConfigModel);
+        assertNotNull("EmojiConfigModel should not be null", emojiConfigModel);
         List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
-        assertNotNull(emojiConfigs);
-        assertEquals(2, emojiConfigs.size());
+        assertNotNull("EmojiConfigs list should not be null", emojiConfigs);
+        assertEquals("Expected 2 emoji configs", 2, emojiConfigs.size());
 
         // Verify the properties of each RTEEmojiConfigBean
-        assertEquals("e1-0-grinning-face", emojiConfigs.get(0).getEmojiName());
-        assertEquals("&#128540", emojiConfigs.get(0).getEmojiValue());
+        assertEquals("Unexpected emoji name for item0", "e1-0-grinning-face", emojiConfigs.get(0).getEmojiName());
+        assertEquals("Unexpected emoji value for item0", "&#128540", emojiConfigs.get(0).getEmojiValue());
 
-        assertEquals("e0-6-grinning-face-with-big-eye", emojiConfigs.get(1).getEmojiName());
-        assertEquals("&#x1F600", emojiConfigs.get(1).getEmojiValue());
+        assertEquals("Unexpected emoji name for item1", "e0-6-grinning-face-with-big-eye", emojiConfigs.get(1).getEmojiName());
+        assertEquals("Unexpected emoji value for item1", "&#x1F600", emojiConfigs.get(1).getEmojiValue());
     }
 }
