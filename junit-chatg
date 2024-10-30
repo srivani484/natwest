@@ -1,7 +1,8 @@
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.factory.ModelFactory;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,6 +20,12 @@ public class RTEEmojiConfigModelTest {
     @Mock
     private Resource resourceMock;
 
+    @Mock
+    private Resource emojiConfigResourceMock;
+
+    @Mock
+    private ModelFactory modelFactory;
+
     @InjectMocks
     private RTEEmojiConfigModel emojiConfigModel;
 
@@ -29,37 +36,35 @@ public class RTEEmojiConfigModelTest {
     public void setUp() {
         MockitoAnnotations.openMocks(this);
 
-        // Create emoji config beans
-        emojiConfigBean1 = new RTEEmojiConfigBean();
-        emojiConfigBean2 = new RTEEmojiConfigBean();
+        // Create mock emoji config beans
+        emojiConfigBean1 = createEmojiConfigBean("smile", "😊");
+        emojiConfigBean2 = createEmojiConfigBean("grin", "😁");
 
-        // Mock the emoji config beans directly
-        when(emojiConfigBean1.getEmojiName()).thenReturn("smile");
-        when(emojiConfigBean1.getEmojiValue()).thenReturn("😊");
-        
-        when(emojiConfigBean2.getEmojiName()).thenReturn("grin");
-        when(emojiConfigBean2.getEmojiValue()).thenReturn("😁");
+        // Mock the child resource retrieval
+        when(resourceMock.getChild("emojiconfigs")).thenReturn(emojiConfigResourceMock);
+        when(emojiConfigResourceMock.adaptTo(RTEEmojiConfigBean.class)).thenReturn(emojiConfigBean1, emojiConfigBean2);
 
-        // Mock the ChildResource behavior
+        // Simulating the behavior of getEmojiConfigs
         List<RTEEmojiConfigBean> emojiConfigList = new ArrayList<>();
         emojiConfigList.add(emojiConfigBean1);
         emojiConfigList.add(emojiConfigBean2);
-
-        // Directly inject the mocked emoji configs
-        emojiConfigModel = new RTEEmojiConfigModel();
-        emojiConfigModel.emojiConfigs = emojiConfigList; // Assuming this field is accessible for testing
+        when(emojiConfigModel.getEmojiConfigs()).thenReturn(emojiConfigList);
     }
 
     @Test
     public void testGetEmojiConfigs() {
-        // Act
-        List<RTEEmojiConfigBean> configs = emojiConfigModel.getEmojiConfigs();
+        List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
+        assertEquals(2, emojiConfigs.size());
+        assertEquals("smile", emojiConfigs.get(0).getEmojiName());
+        assertEquals("😊", emojiConfigs.get(0).getEmojiValue());
+        assertEquals("grin", emojiConfigs.get(1).getEmojiName());
+        assertEquals("😁", emojiConfigs.get(1).getEmojiValue());
+    }
 
-        // Assert
-        assertEquals(2, configs.size());
-        assertEquals("smile", configs.get(0).getEmojiName());
-        assertEquals("😊", configs.get(0).getEmojiValue());
-        assertEquals("grin", configs.get(1).getEmojiName());
-        assertEquals("😁", configs.get(1).getEmojiValue());
+    private RTEEmojiConfigBean createEmojiConfigBean(String name, String value) {
+        RTEEmojiConfigBean bean = mock(RTEEmojiConfigBean.class);
+        when(bean.getEmojiName()).thenReturn(name);
+        when(bean.getEmojiValue()).thenReturn(value);
+        return bean;
     }
 }
