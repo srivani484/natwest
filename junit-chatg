@@ -11,7 +11,9 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class RTEEmojiConfigModelTest {
@@ -22,32 +24,37 @@ public class RTEEmojiConfigModelTest {
     @Mock
     private Resource emojiConfigResourceMock;
 
-    @Mock
-    private ModelFactory modelFactoryMock;
-
     private RTEEmojiConfigModel emojiConfigModel;
 
     @Before
     public void setUp() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
         
-        // Mock the resource that represents the child emoji configs
-        when(resourceMock.getChild("emojiConfigs")).thenReturn(emojiConfigResourceMock);
-
-        // Create mock ValueMap for emoji configurations
+        // Mocking the emojiConfigs as child resources
+        List<Resource> childResources = new ArrayList<>();
+        
+        // Creating mock resources for emoji configurations
+        Resource emoji1 = mock(Resource.class);
         ValueMap valueMap1 = mock(ValueMap.class);
         when(valueMap1.get("emojiName", String.class)).thenReturn("e1-0-grinning-face");
         when(valueMap1.get("emojiValue", String.class)).thenReturn("&#128540");
+        when(emoji1.adaptTo(ValueMap.class)).thenReturn(valueMap1);
+        childResources.add(emoji1);
 
+        Resource emoji2 = mock(Resource.class);
         ValueMap valueMap2 = mock(ValueMap.class);
         when(valueMap2.get("emojiName", String.class)).thenReturn("e0-6-grinning-face-with-big-eye");
         when(valueMap2.get("emojiValue", String.class)).thenReturn("&#x1F600");
+        when(emoji2.adaptTo(ValueMap.class)).thenReturn(valueMap2);
+        childResources.add(emoji2);
 
-        // Return the mocked ValueMaps as children of the emojiConfigResourceMock
-        when(emojiConfigResourceMock.listChildren()).thenReturn(Arrays.asList(valueMap1, valueMap2).iterator());
+        // Mock the resource that contains the emoji configs
+        when(resourceMock.listChildren()).thenReturn(childResources.iterator());
 
-        // Instantiate the model
+        // Instantiate the model and set the resource
         emojiConfigModel = new RTEEmojiConfigModel();
+        // Assume there's a method in the model to set the resource or adjust the constructor accordingly
+        // e.g., emojiConfigModel.setResource(resourceMock);
     }
 
     @Test
@@ -65,8 +72,8 @@ public class RTEEmojiConfigModelTest {
 
     @Test
     public void testGetEmojiConfigsEmpty() {
-        // Set the emojiConfigs to return an empty list
-        when(emojiConfigResourceMock.listChildren()).thenReturn(Collections.emptyIterator());
+        // Set the resource to return an empty list of children
+        when(resourceMock.listChildren()).thenReturn(Collections.emptyIterator());
 
         // Call the method under test
         List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
