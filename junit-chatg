@@ -4,14 +4,13 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ValueMap;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class RTEEmojiConfigModelTest {
@@ -21,36 +20,33 @@ public class RTEEmojiConfigModelTest {
 
     @Mock
     private Resource emojiResource1;
-    
+
     @Mock
     private Resource emojiResource2;
 
     private RTEEmojiConfigModel emojiConfigModel;
 
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
         
-        // Mock the behavior for emoji resources
+        // Mock the emoji resources and their respective beans
         when(emojiResource1.adaptTo(RTEEmojiConfigBean.class)).thenReturn(createEmojiConfigBean("e1-0-grinning-face", "&#128540"));
         when(emojiResource2.adaptTo(RTEEmojiConfigBean.class)).thenReturn(createEmojiConfigBean("e0-6-grinning-face-with-big-eye", "&#x1F600"));
 
-        // Mock the resource to return the emoji resources
-        List<Resource> children = new ArrayList<>();
-        children.add(emojiResource1);
-        children.add(emojiResource2);
-        
-        when(resourceMock.listChildren()).thenReturn(children.iterator());
-
         // Create the model instance
         emojiConfigModel = new RTEEmojiConfigModel();
-        emojiConfigModel.emojiConfigs = new ArrayList<>();
-        for (Resource child : children) {
-            RTEEmojiConfigBean emojiConfigBean = child.adaptTo(RTEEmojiConfigBean.class);
-            if (emojiConfigBean != null) {
-                emojiConfigModel.emojiConfigs.add(emojiConfigBean);
-            }
-        }
+        
+        // Use reflection to access the private emojiConfigs field
+        Field emojiConfigsField = RTEEmojiConfigModel.class.getDeclaredField("emojiConfigs");
+        emojiConfigsField.setAccessible(true);  // Make the field accessible
+        
+        // Create a list of emoji config beans and set it to the model
+        List<RTEEmojiConfigBean> emojiConfigs = new ArrayList<>();
+        emojiConfigs.add(emojiResource1.adaptTo(RTEEmojiConfigBean.class));
+        emojiConfigs.add(emojiResource2.adaptTo(RTEEmojiConfigBean.class));
+        
+        emojiConfigsField.set(emojiConfigModel, emojiConfigs);
     }
 
     private RTEEmojiConfigBean createEmojiConfigBean(String name, String value) {
@@ -71,9 +67,12 @@ public class RTEEmojiConfigModelTest {
     }
 
     @Test
-    public void testGetEmojiConfigsEmpty() {
+    public void testGetEmojiConfigsEmpty() throws Exception {
         // Resetting the model to have no emoji configs
-        emojiConfigModel.emojiConfigs.clear();
+        Field emojiConfigsField = RTEEmojiConfigModel.class.getDeclaredField("emojiConfigs");
+        emojiConfigsField.setAccessible(true);
+        emojiConfigsField.set(emojiConfigModel, new ArrayList<>());
+
         List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
         assertEquals(0, emojiConfigs.size());
     }
