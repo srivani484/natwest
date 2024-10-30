@@ -1,14 +1,23 @@
-import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.spi.ModelType;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(RTEEmojiConfigModel.class)
 public class RTEEmojiConfigModelTest {
 
     @Mock
@@ -17,22 +26,26 @@ public class RTEEmojiConfigModelTest {
     @Mock
     private RTEEmojiConfigBean emojiConfigBeanMock;
 
+    @InjectMocks
     private RTEEmojiConfigModel emojiConfigModel;
 
     @Before
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        
+
         // Stubbing the behavior of emojiConfigBeanMock
         when(emojiConfigBeanMock.getEmojiName()).thenReturn("smile");
         when(emojiConfigBeanMock.getEmojiValue()).thenReturn("😊");
 
-        // Creating a list to simulate multiple emoji configurations
+        // Mocking the behavior of the list returned by the child resource
         List<RTEEmojiConfigBean> emojiConfigList = new ArrayList<>();
         emojiConfigList.add(emojiConfigBeanMock);
+
+        // Mocking the ChildResource to return the list
+        when(resourceMock.adaptTo(List.class)).thenReturn(emojiConfigList);
         
-        // Assuming that the constructor for RTEEmojiConfigModel is set up to accept the list directly for the purpose of this test
-        emojiConfigModel = new RTEEmojiConfigModel(emojiConfigList);
+        // PowerMock to prepare the model class
+        PowerMockito.whenNew(RTEEmojiConfigModel.class).withAnyArguments().thenReturn(emojiConfigModel);
     }
 
     @Test
