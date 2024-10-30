@@ -19,33 +19,35 @@ public class RTEEmojiConfigModelTest {
     @Mock
     private Resource resourceMock;
 
-    @Mock
-    private RTEEmojiConfigBean emojiConfigBeanMock1;
-
-    @Mock
-    private RTEEmojiConfigBean emojiConfigBeanMock2;
-
     @InjectMocks
     private RTEEmojiConfigModel emojiConfigModel;
+
+    private RTEEmojiConfigBean emojiConfigBean1;
+    private RTEEmojiConfigBean emojiConfigBean2;
 
     @Before
     public void setUp() {
         MockitoAnnotations.openMocks(this);
 
-        // Setting up mocked emoji config beans
-        when(emojiConfigBeanMock1.getEmojiName()).thenReturn("smile");
-        when(emojiConfigBeanMock1.getEmojiValue()).thenReturn("😊");
+        // Create emoji config beans
+        emojiConfigBean1 = new RTEEmojiConfigBean();
+        emojiConfigBean2 = new RTEEmojiConfigBean();
 
-        when(emojiConfigBeanMock2.getEmojiName()).thenReturn("grin");
-        when(emojiConfigBeanMock2.getEmojiValue()).thenReturn("😁");
+        // Mock the emoji config beans directly
+        when(emojiConfigBean1.getEmojiName()).thenReturn("smile");
+        when(emojiConfigBean1.getEmojiValue()).thenReturn("😊");
+        
+        when(emojiConfigBean2.getEmojiName()).thenReturn("grin");
+        when(emojiConfigBean2.getEmojiValue()).thenReturn("😁");
 
-        // Prepare the list of mocked emoji config beans
+        // Mock the ChildResource behavior
         List<RTEEmojiConfigBean> emojiConfigList = new ArrayList<>();
-        emojiConfigList.add(emojiConfigBeanMock1);
-        emojiConfigList.add(emojiConfigBeanMock2);
+        emojiConfigList.add(emojiConfigBean1);
+        emojiConfigList.add(emojiConfigBean2);
 
-        // Mock the behavior of the ChildResource injection
-        when(resourceMock.adaptTo(List.class)).thenReturn(emojiConfigList);
+        // Directly inject the mocked emoji configs
+        emojiConfigModel = new RTEEmojiConfigModel();
+        emojiConfigModel.emojiConfigs = emojiConfigList; // Assuming this field is accessible for testing
     }
 
     @Test
