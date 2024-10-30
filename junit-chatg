@@ -1,0 +1,50 @@
+package com.responsive.cer.models;
+
+import org.apache.sling.junit.rules.SlingContext;
+import org.junit.Rule;
+import org.junit.Test;
+import org.apache.sling.api.resource.Resource;
+
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+public class RTEEmojiConfigModelTest {
+
+    @Rule
+    public SlingContext slingContext = new SlingContext();
+
+    @Test
+    public void testGetEmojiConfigs() {
+        // Create child resources representing RTEEmojiConfigBean instances
+        slingContext.create().resource("/content/emojiconfig/emoji1", 
+                "emojiName", "Smile", "emojiValue", ":)");
+        slingContext.create().resource("/content/emojiconfig/emoji2", 
+                "emojiName", "Sad", "emojiValue", ":(");
+        slingContext.create().resource("/content/emojiconfig/emoji3", 
+                "emojiName", "Wink", "emojiValue", ";)");
+
+        // Create the main resource for the model
+        Resource resource = slingContext.create().resource("/content/emojiconfig");
+
+        // Adapt the resource to RTEEmojiConfigModel
+        RTEEmojiConfigModel emojiConfigModel = resource.adaptTo(RTEEmojiConfigModel.class);
+
+        // Assertions
+        assertNotNull(emojiConfigModel);
+        List<RTEEmojiConfigBean> emojiConfigs = emojiConfigModel.getEmojiConfigs();
+        assertNotNull(emojiConfigs);
+        assertEquals(3, emojiConfigs.size()); // Ensure the size matches the number of child resources
+
+        // Verify the properties of each RTEEmojiConfigBean
+        assertEquals("Smile", emojiConfigs.get(0).getEmojiName());
+        assertEquals(":)", emojiConfigs.get(0).getEmojiValue());
+
+        assertEquals("Sad", emojiConfigs.get(1).getEmojiName());
+        assertEquals(":(", emojiConfigs.get(1).getEmojiValue());
+
+        assertEquals("Wink", emojiConfigs.get(2).getEmojiName());
+        assertEquals(";)", emojiConfigs.get(2).getEmojiValue());
+    }
+}
