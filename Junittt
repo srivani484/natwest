@@ -1,0 +1,52 @@
+package com.mysite.core.models;
+
+import io.wcm.testing.mock.aem.junit5.AemContext;
+import io.wcm.testing.mock.aem.junit5.AemContextExtension;
+import org.apache.sling.api.resource.Resource;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+@ExtendWith(AemContextExtension.class)
+public class RTEEmojiConfigModelTest {
+
+    @InjectMocks
+    RTEEmojiConfigModel model = new RTEEmojiConfigModel();
+
+    @BeforeEach
+    public void setup() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+    @Test
+    public void testGetEmojiConfigs() {
+        List<RTEEmojiConfigBean> mockEmojiConfigs = new ArrayList<>();
+        RTEEmojiConfigBean emojiConfigBean = new RTEEmojiConfigBean();
+        emojiConfigBean.emojiName = "Smile";
+        emojiConfigBean.emojiValue = ":)";
+        mockEmojiConfigs.add(emojiConfigBean);
+        model.emojiConfigs = mockEmojiConfigs;
+        List<RTEEmojiConfigBean> emojiConfigs = model.getEmojiConfigs();
+
+        assertEquals(1, emojiConfigs.size());
+        assertEquals(emojiConfigs.get(0).getEmojiName(),"Smile");
+        assertEquals(emojiConfigs.get(0).getEmojiValue(),":)");
+    }
+
+    @Test
+    public void testGetEmojiConfigsEmpty() {
+        model.emojiConfigs=null;
+        List<RTEEmojiConfigBean> emojiConfigs = model.getEmojiConfigs();
+        assertEquals(Collections.emptyList(), emojiConfigs);
+    }
+}
