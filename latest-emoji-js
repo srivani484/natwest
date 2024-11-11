@@ -8,22 +8,27 @@
         FONT_SELECTOR_URL = "/apps/responsive/components/configs/emojiconfig/eaem-emojis-rte-plugin/emoji-selector.html",
         url = document.location.pathname;
 
-    if((url.indexOf("/editor.html") == 0) || (url.indexOf("/mnt/overlay/dam/cfm/admin/content/v2/fragment-editor.html") == 0)){
+    if ((url.indexOf("/editor.html") == 0) || (url.indexOf("/mnt/overlay/dam/cfm/admin/content/v2/fragment-editor.html") == 0)) {
         extendStyledTextEditor();
         addPlugin();
         addDialogTemplate();
-    } if(url.indexOf(FONT_SELECTOR_URL) == 0){
+    }
+
+    if (url.indexOf(FONT_SELECTOR_URL) == 0) {
         handlePicker();
         return;
     }
 
-    function handlePicker(){
+    function handlePicker() {
+        // Handle the cancel button click event in the picker modal
         $document.on("click", CANCEL_CSS, sendCancelMessage);
+        // Handle the emoji click event from the picker
         $document.on("click", "#eaem-emojis span", addEmojiSelectListener);
     }
 
-    function addEmojiSelectListener(){
-        var emoji = $(this).html(); // Get the emoji character
+    function addEmojiSelectListener() {
+        var emoji = $(this).html(); // Get the selected emoji character
+        console.log("Emoji Selected: ", emoji); // Debugging: Check which emoji is selected
         insertEmojiAtCursor(emoji); // Insert the emoji at the current cursor position
         var message = {
             sender: SENDER,
@@ -33,8 +38,8 @@
         getParent().postMessage(JSON.stringify(message), "*");
     }
 
-    function sendCancelMessage(){
-        console.log("inside cancel");
+    function sendCancelMessage() {
+        console.log("Inside cancel");
         var message = { sender: SENDER, action: "cancel" };
         getParent().postMessage(JSON.stringify(message), "*");
     }
@@ -46,15 +51,15 @@
         return parent;
     }
 
-    function addDialogTemplate(){
+    function addDialogTemplate() {
         var url = Granite.HTTP.externalize(FONT_SELECTOR_URL) + "?" + REQUESTER + "=" + SENDER;
         var html = "<iframe width='700px' height='300px' frameBorder='0' src='" + url + "'></iframe>";
-        
-        if(_.isUndefined(CUI.rte.Templates)){
+
+        if (_.isUndefined(CUI.rte.Templates)) {
             CUI.rte.Templates = {};
         }
 
-        if(_.isUndefined(CUI.rte.templates)){
+        if (_.isUndefined(CUI.rte.templates)) {
             CUI.rte.templates = {};
         }
 
@@ -70,7 +75,7 @@
         var message, action;
         try {
             message = JSON.parse(event.data);
-        } catch(err) {
+        } catch (err) {
             return;
         }
 
@@ -79,8 +84,8 @@
         }
 
         action = message.action;
-        if(action === "submit"){
-            insertEmojiAtCursor(message.data.emoji);
+        if (action === "submit") {
+            insertEmojiAtCursor(message.data.emoji); // Insert the emoji at the cursor
         }
 
         var modal = $emojiVarPicker.data('modal');
@@ -89,27 +94,34 @@
     }
 
     function insertEmojiAtCursor(emoji) {
+        // Retrieve the current selection (cursor position)
         var context = CUI.rte.Selection.getContext();
+        console.log("Current Selection Context: ", context); // Debugging: Check selection context
+
         if (context && context.range) {
             var range = context.range;
             var emojiElement = document.createElement("span");
             emojiElement.innerHTML = emoji;
+
+            // Insert the emoji at the current cursor position
             range.insertNode(emojiElement);
-            range.setStartAfter(emojiElement); // Move cursor after inserted emoji
-            range.setEndAfter(emojiElement);   // Keep cursor after emoji
+            range.setStartAfter(emojiElement); // Move cursor after the inserted emoji
+            range.setEndAfter(emojiElement);
+
+            // Update the selection to maintain the cursor after the emoji
             CUI.rte.Selection.selectRange(range);
         }
     }
 
-    function extendStyledTextEditor(){
+    function extendStyledTextEditor() {
         var origFn = Dam.CFM.StyledTextEditor.prototype._start;
-        Dam.CFM.StyledTextEditor.prototype._start = function(){
+        Dam.CFM.StyledTextEditor.prototype._start = function() {
             addRTEPluginSettings(this);
             origFn.call(this);
         }
     }
 
-    function addRTEPluginSettings(editor){
+    function addRTEPluginSettings(editor) {
         var config = editor.$editable.data("config");
         config.rtePlugins[GROUP] = {
             features: "*"
@@ -129,15 +141,15 @@
         }
     });
 
-    function addPlugin(){
+    function addPlugin() {
         var EAEMTouchUIInsertEmojiPlugin = new Class({
             toString: "EAEMTouchUIInsertEmojiPlugin",
             extend: CUI.rte.plugins.Plugin,
             pickerUI: null,
             getFeatures: function() {
-                return [ INSERT_EMOJI_FEATURE ];
+                return [INSERT_EMOJI_FEATURE];
             },
-            notifyPluginConfig: function (pluginConfig) {
+            notifyPluginConfig: function(pluginConfig) {
                 var defaults = {
                     tooltips: {}
                 };
@@ -158,13 +170,13 @@
                 tbGenerator.registerIcon(groupFeature, "heart");
                 $(window).off('message', receiveMessage).on('message', receiveMessage);
             },
-            execute: function (pluginCommand, value, envOptions){
+            execute: function(pluginCommand, value, envOptions) {
                 if (pluginCommand != INSERT_EMOJI_FEATURE) {
                     return;
                 }
                 this.showFontModal(this.getPickerIFrameUrl());
             },
-            showFontModal: function(url){
+            showFontModal: function(url) {
                 var self = this, $iframe = $('<iframe>'),
                     $modal = $('<div>').addClass('eaem-cfm-emoji coral-Modal');
                 $iframe.attr('src', url).appendTo($modal);
@@ -177,7 +189,7 @@
                 $emojiVarPicker.emojiPlugin = self;
                 $modal.nextAll(".coral-Modal-backdrop").addClass("cfm-coral2-backdrop");
             },
-            getPickerIFrameUrl: function(){
+            getPickerIFrameUrl: function() {
                 return Granite.HTTP.externalize(FONT_SELECTOR_URL) + "?" + REQUESTER + "=" + SENDER;
             }
         });
@@ -185,14 +197,14 @@
         var EAEMTouchUIEmojiCmd = new Class({
             toString: "EAEMTouchUIEmojiCmd",
             extend: CUI.rte.commands.Command,
-            isCommand: function (cmdStr) {
+            isCommand: function(cmdStr) {
                 return (cmdStr.toLowerCase() == INSERT_EMOJI_FEATURE);
             },
-            getProcessingOptions: function () {
+            getProcessingOptions: function() {
                 var cmd = CUI.rte.commands.Command;
                 return cmd.PO_SELECTION | cmd.PO_BOOKMARK | cmd.PO_NODELIST;
             },
-            execute: function (execDef) {
+            execute: function(execDef) {
                 execDef.value = Object.values(execDef.value).join(" ");
                 CUI.rte.commands.InsertHtml().execute(execDef);
             },
@@ -201,7 +213,3 @@
             }
         });
 
-        CUI.rte.commands.CommandRegistry.register(INSERT_EMOJI_FEATURE, EAEMTouchUIEmojiCmd);
-        CUI.rte.plugins.PluginRegistry.register(GROUP,EAEMTouchUIInsertEmojiPlugin);
-    }
-})(jQuery, window.CUI,jQuery(document));
