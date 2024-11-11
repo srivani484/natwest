@@ -92,7 +92,7 @@
                     action = message.action;
 
                     if(action === "submit"){
-                        $emojiVarPicker.emojiPlugin.editorKernel.execCmd(INSERT_EMOJI_FEATURE, message.data);
+                        $emojiVarPicker.emojiPlugin.editorKernel.relayCmd(INSERT_EMOJI_FEATURE, message.data);
 
                     }
 
