@@ -1,9 +1,24 @@
- // Now create a new range to place the cursor after the inserted emoji
-    var newRange = context.doc.createRange();
-    newRange.setStartAfter(emojiSpan); // Move the cursor after the inserted emoji
-    newRange.setEndAfter(emojiSpan);   // Set the end of the selection to the same point
-    
-    // Create a new selection object and apply the new range to it
+execute: function (execDef) {
+    var emoji = execDef.value.emoji, context = execDef.editContext,
+        emojiSpan = context.doc.createElement("span");
+
+    emojiSpan.innerHTML = emoji;
+
+    // Get the current selection and range
     var selection = context.win.getSelection();
-    selection.removeAllRanges();      // Clear any existing selection
-    selection.addRange(newRange);     /
+    var range = CUI.rte.Common.ua.isIE ? CUI.rte.Selection.saveNativeSelection(context)
+        : CUI.rte.Selection.getLeadRange(context);
+
+    // Insert the emoji at the current selection (cursor position)
+    range.insertNode(emojiSpan);
+
+    // After inserting, create a new range to place the cursor after the emoji
+    var newRange = context.doc.createRange();
+    // Ensure that we are placing the cursor right after the emoji
+    newRange.setStartAfter(emojiSpan);
+    newRange.setEndAfter(emojiSpan);
+
+    // Clear the existing selection and set the new range
+    selection.removeAllRanges();
+    selection.addRange(newRange);
+}
